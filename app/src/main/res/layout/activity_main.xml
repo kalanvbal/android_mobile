@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:hint="@string/information_membre" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/eddy"
+            tools:srcCompat="@drawable/eddy" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_nomComplet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/nom_complet" />
+
+            <EditText
+                android:id="@+id/et_courriel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/courriel" />
+
+            <EditText
+                android:id="@+id/et_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="@string/telephone" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="284dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_MDP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="@string/MDP"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/et_confirmationMDP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="@string/confirmation_MDP"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_afficherMDP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:onClick="onClick_afficher"
+                android:text="@string/afficher"/>
+
+            <CheckBox
+                android:id="@+id/cb_afficherConfirmationMDP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:onClick="onClick_afficher2"
+                android:text="@string/afficher"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/cb_infolettre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/s_space"
+            android:text="@string/accepter_infolettre" />
+
+        <Button
+            android:id="@+id/btn_sauvegarder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_quitter"
+            android:onClick="onClick_sauvegarder"
+            android:text="@string/sauvegarder" />
+
+        <Button
+            android:id="@+id/btn_quitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="onClick_quitter"
+            android:text="@string/quitter" />
+
+        <Space
+            android:id="@+id/s_space"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_above="@+id/btn_sauvegarder"
+            android:layout_marginBottom="18dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

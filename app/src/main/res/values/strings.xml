@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Laboratoire2-Kales</string>
+    <string name="information_membre">Informations dun membre</string>
+    <string name="nom_complet">Nom complet</string>
+    <string name="courriel">Courriel</string>
+    <string name="telephone">Téléphone</string>
+    <string name="MDP">Mot de passe</string>
+    <string name="confirmation_MDP">Confirmation mot de passe</string>
+    <string name="afficher">Afficher</string>
+    <string name="accepter_infolettre">"J'accepte de recevoir l'infolettre pour les nouveaux événements"</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="quitter">Quitter</string>
+</resources>
