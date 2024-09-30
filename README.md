@@ -1,2 +1,2 @@
 # android_mobile
-Application mobile créée en Java et XML avec Android Studio.
+Cette application mobile, développée en XML et Java, permet aux utilisateurs de saisir et de sauvegarder leurs informations personnelles, notamment le nom, l'email, le téléphone et le mot de passe. Elle inclut des options pour afficher ou masquer le mot de passe, ainsi qu'un bouton pour quitter l'application. Un avatar peut également être affiché, et des messages Toast informent l'utilisateur des actions effectuées.
